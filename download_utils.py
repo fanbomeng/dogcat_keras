@@ -96,7 +96,7 @@ def down_fr_url(urls: list, save_dir: str='', unzip: bool=False):
                 print('{} already exists.'.format(save_path))
                 continue
             print('Downloading {} ...'.format(fn))
-            urlretrieve(url, save_path)
+            urlretrieve(url, save_path,reporthook=progress)
             print('\n')
             if unzip:
                 print('Extracting file ...')
