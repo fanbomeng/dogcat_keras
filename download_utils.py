@@ -9,7 +9,7 @@ import time
 
 
 BYTES_PER_MB = 1024 * 1024
-
+print('hi')
 
 def error_handle():
     """Print out error line and filename
